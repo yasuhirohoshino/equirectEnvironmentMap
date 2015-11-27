@@ -25,8 +25,6 @@ void ofApp::setup(){
     envImage.load("wadabori_park.jpg");
     
     // 環境マップ用の動画
-    ofDisableArbTex();
-    videoPlayer.getTexturePtr()->allocate(1920, 960, GL_RGB);
     videoPlayer.load("ohmiya_shrine.mp4");
     videoPlayer.setLoopState(OF_LOOP_NORMAL);
     
@@ -55,6 +53,7 @@ void ofApp::setup(){
     // 環境マップの素材
     source = 0;
     
+    // 3Dオブジェクト
     object = 0;
 }
 
